@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mergington High School Activities</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Mergington High School</h1>
+        <p>Explore clubs, teams, and events designed for every student.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="intro">
+        <h2>Welcome to Our Extracurricular Program</h2>
+        <p>
+          Discover the activities that help students learn, grow, and connect with the
+          Mergington community.
+        </p>
+      </section>
+
+      <section class="registration" id="registration">
+        <h2>Register for Activities</h2>
+        <p>Start your extracurricular journey with a quick registration form.</p>
+        <form id="registrationForm" class="registration-form">
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Grade</span>
+              <select name="grade" required>
+                <option value="">Select your grade</option>
+                <option>9th Grade</option>
+                <option>10th Grade</option>
+                <option>11th Grade</option>
+                <option>12th Grade</option>
+              </select>
+            </label>
+            <label>
+              <span>Activity Interest</span>
+              <input type="text" name="interest" placeholder="Robotics, drama, coding..." required />
+            </label>
+          </div>
+          <label class="full-width">
+            <span>Why are you interested?</span>
+            <textarea name="message" rows="4" placeholder="Tell us what excites you about joining." required></textarea>
+          </label>
+          <button type="submit">Submit Registration</button>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="activities" id="activities">
+        <h2>Featured Activities</h2>
+        <p class="grid-note">The activity cards use CSS Grid to automatically wrap into columns based on screen width.</p>
+        <div class="activity-grid" id="activityGrid"></div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <h2>Student Testimonials</h2>
+        <p>Hear from students who found their community through our activities.</p>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>"Joining the Drama Society helped me build confidence and make friends across grades."</p>
+            <strong>- Maya, 11th Grade</strong>
+          </article>
+          <article class="testimonial-card">
+            <p>"The Coding Circle made programming fun, and I loved working on projects with teammates."</p>
+            <strong>- Jordan, 10th Grade</strong>
+          </article>
+          <article class="testimonial-card">
+            <p>"Eco Action Team gave me a voice in our school and helped me lead real sustainability changes."</p>
+            <strong>- Priya, 12th Grade</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="about">
+        <h2>Why Join?</h2>
+        <ul>
+          <li>Build leadership and teamwork skills.</li>
+          <li>Connect with new friends and mentors.</li>
+          <li>Participate in events, competitions, and performances.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Questions? Email us at <a href="mailto:activities@mergington.edu">activities@mergington.edu</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
